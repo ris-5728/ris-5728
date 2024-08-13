@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+
+<style>
+    html {
+  background-color: #222;
+}
+
+.headers {
+  margin-top: 10%;
+}
+
+h1, h2, h3 {
+  font-family: 'Monoton', cursive;
+  font-size: 40px;
+}
+
+h1 {
+  color: #beee4e;
+  -webkit-animation: h1 8s infinite; 
+  animation: h1 8s infinite;
+}
+
+h2 {
+  color: white;
+  -webkit-animation: h2 0.35s infinite; 
+  animation: h2 0.35s infinite;
+}
+
+h3 {
+
+  background: -webkit-linear-gradient(#fff, #eee, #fff, #666, #eee, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 1px 45px rgba(255, 255, 255, 0.2);
+}
+
+
+div {
+    text-align: center;
+    position: relative;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes h1 {
+    0%   {text-shadow: 0 0 3px #FF0000; color: #fff;}
+    25%  {text-shadow: 0 0 12px #FF0000;}
+    50%  {text-shadow: 0 0 20px #FF0000; color: pink;}
+    75%  {text-shadow: 0 0 12px #FF0000;}
+    100% {text-shadow: 0 0 3px #FF0000; color: #fff;}
+}
+
+@-webkit-keyframes h2 {
+    0%   {text-shadow: 0 0 6px #43028d;}
+    100%  {text-shadow: 0 0 0px #000;}
+}
+
+/* Internet Explorer */
+
+@keyframes h1 {
+    0%   {text-shadow: 0 0 3px #FF0000; color: #fff;}
+    25%  {text-shadow: 0 0 12px #FF0000;}
+    50%  {text-shadow: 0 0 20px #FF0000; color: pink;}
+    75%  {text-shadow: 0 0 12px #FF0000;}
+    100% {text-shadow: 0 0 3px #FF0000; color: #fff;}
+}
+
+@keyframes h2 {
+    0%   {text-shadow: 0 0 6px #FFF;}
+    100%  {text-shadow: 0 0 0px #000;}
+}
+
+
+#home{
+  height: 0vh;
+
+}
+
+ul{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  padding: 30px;
+}
+a{
+  color: black;
+  text-transform: capitalize;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color:whitesmoke;
+  border-radius: 6px;
+  font-size: 15px;
+  
+}
+
+.home{
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:larger ;
+}
+</style></head>
+<body>
+    
+  <section id="home">
+    <nav>
+        <ul>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/skills">Skills</a>
+            <a href="/contact">Contact</a>
+        </ul>
+    </nav> </section>
+
+<div class = "headers">
+  <h2>FRONTEND-HTML & CSS</h2>
+  <h1>BACKEND-MYSQL,RDBMS</h1>
+  <h3>LANGUAGES-C & PYTHON</h3>
+  
+  
+
+</div>
+
+</body>
+</html>
